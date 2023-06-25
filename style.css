@@ -65,8 +65,14 @@ button {
     cursor: pointer;
 }
 
-pre {
+p {
     color: white;
+    font-family: Consolas;
+    text-align: center;
+}
+#author-result{
+    align-self: flex-end;
+    color: red;
 }
 
 footer {
