@@ -1,7 +1,13 @@
+/* Common styles for all devices */
 body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    padding-top: 3em;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .container {
@@ -10,15 +16,10 @@ body {
     padding: 20px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
 .quote-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote {
@@ -34,13 +35,14 @@ header {
     border-radius: 50%;
 }
 
-main {
-    margin-bottom: 40px;
-}
-
 .code-editor {
     background-color: #1e1e1e;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 2em;
 }
 
 button {
@@ -59,6 +61,15 @@ pre {
 footer {
     background-color: #333333;
     padding: 20px;
+    width: 100%;
+    margin-top: 5em;
+}
+footer .container .footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .logo {
@@ -73,4 +84,35 @@ footer {
     color: white;
     text-decoration: none;
     margin-right: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    .quote-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quote {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for mobile devices */
+    .quote {
+        font-size: 24px;
+    }
+
+    .image {
+        max-width: 80%;
+    }
 }
