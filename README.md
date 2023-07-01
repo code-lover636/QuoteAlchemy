@@ -1,6 +1,6 @@
 # QuoteAlchemy
-
-The QuoteAlchemy is a web application that displays random quotes to inspire and uplift users. It fetches quotes from an external API and presents them in a visually appealing and user-friendly manner.
+See Hosted [website](https://code-lover636.github.io/QuoteAlchemy/) <br>
+QuoteAlchemy is a web application that displays random quotes to inspire and uplift users. It fetches quotes from an external API and presents them in a visually appealing and user-friendly manner.
 
 
 ![image](https://github.com/code-lover636/QuoteAlchemy/assets/77882744/b903b709-9a61-4ca4-baed-19e4a114211b)
